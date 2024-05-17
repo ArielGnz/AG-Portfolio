@@ -6,7 +6,7 @@ export default function Titulo() {
 
 
   return (
-    <section className='flex flex-col mt-[120px] lg:flex-row lg:h-screen lg:w-[80%] lg:m-auto lg:content-center'>
+    <section className='flex flex-col mt-[120px] lg:flex-row lg:h-screen lg:w-[80%] lg:m-auto lg:content-center border-b '>
         <div className='p-10 lg:w-[90%] my-10 w-full lg:h-[700px] lg:self-center lg:content-center '>
             <h1 className='text-sky-300 text-2xl font-bold tracking-widest leading-10 lg:text-4xl'> Hola, soy </h1>
             <p className='py-2 text-3xl font-bold text-slate-300 lg:text-7xl'> Ariel Gonzalez </p>
