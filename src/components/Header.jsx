@@ -1,26 +1,36 @@
-import logo from '../assets/Logo.png'
 
+import { useState } from 'react';
 
 export default function Header(){
-    return(
-        <div>
-            <nav className="flex justify-between py-10 m-auto px-10 text-lg font-medium tracking-widest md:items-center">
-                <a href=""><img src={logo} alt="" width="28" /></a>
-                <div id="menu" className='bg-white dark:bg-slate-800 p-7 h-[380px] w-[320px] flex flex-col items-start justify-around rounded-lg text-dark 
-                dark:text-white md:flex-row md:w-full md:py-0 md:h-[50px] md:dark:bg-primary'> 
-                    <ul className='flex h-5/6 flex-col justify-around md:flex-row md:justify-center w-full'>
-                        <li className='md:px-5 hover:text-sky-600'><a href=""> Quien Soy </a></li>
-                        <li className='md:px-5 hover:text-sky-600'><a href=""></a> Experiencia </li>
-                        <li className='md:px-5 hover:text-sky-600'><a href=""></a> Proyectos </li>
-                        <li className='md:px-5 hover:text-sky-600'><a href=""></a> Contactame </li>
-                    </ul>
 
-                    <button id="darkButton">
-                        <i className="bi bi-moon-stars-fill text-sky-600 text-2xl"></i>
-                    </button>
+    const [menuVisible, setMenuVisible] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuVisible(!menuVisible);
+    };
+
+    return(
+        <div className='w-full m-auto mt-0 border-b-4 border-slate-800 lg:fixed'>
+            <nav className="flex justify-between py-8 m-auto px-10 text-lg font-medium tracking-widest md:items-center">
+                <h1 className='text-5xl text-white bg-primary pr-2'>AG</h1>
+                <div id="menu" className={`p-7 h-[380px] w-[320px] flex flex-col items-center lg:justify-end rounded-lg  
+                    text-white md:flex-row md:w-full md:py-0 md:h-[50px] md:dark:bg-primary ${menuVisible ? 'flex' : 'hidden'} md:flex `}> 
+                    <ul className='flex h-5/6 flex-col justify-around md:flex-row md:justify-end w-full '>
+                        <li className='md:px-8 hover:text-sky-600'><a href="#sobreMi"> Quien Soy </a></li>
+                        <li className='md:px-8 hover:text-sky-600'><a href="#proyectos"> Proyectos </a></li>
+                        <li className='md:px-8 hover:text-sky-600'><a href=""> Contactame </a></li>
+                    </ul>
                 </div>
-                <button id="menu-button">
-                        <i class="bi bi-list"></i>
+                <button id="menu-button" className="absolute top-10 right-12 md:hidden" onClick={toggleMenu}>
+                    <span
+                        className="br-1 block bg-white my-2 rounded-md h-[3px] w-[28px]"
+                    ></span>
+                    <span
+                        className="br-2 block bg-white my-2 rounded-md h-[3px] w-[28px]"
+                    ></span>
+                    <span
+                        className="br-3 block bg-white my-2 rounded-md h-[3px] w-[28px]"
+                    ></span>
                 </button>
             </nav>
         </div>
