@@ -2,11 +2,14 @@ import React from 'react'
 
 import {useState } from "react";
 import Countries from './Countries';
+import RickAndMorty from './RickAndMorty';
+import UuidStore from './Uuid-store';
+import Social from './Social';
 
 
 export default function Proyectos() {
 
-    const [view, setView] = useState("");
+    const [view, setView] = useState("countries");
 
     const handleView = (option) => {
         setView(option);
@@ -22,13 +25,16 @@ export default function Proyectos() {
                         onClick={() => handleView("countries")}>
                     Countries
                 </button>
-                <button className='border-b-2 mx-1 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'>
+                <button className='border-b-2 mx-1 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
+                        onClick={() => handleView("rick")}>
                     Rick and Morty
                 </button>
-                <button className='border-b-2 mx-1 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'>
+                <button className='border-b-2 mx-1 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
+                        onClick={() => handleView("uuid")}>
                     uuid-store
                 </button>
-                <button className='border-b-2 mx-1 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'>
+                <button className='border-b-2 mx-1 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
+                        onClick={() => handleView("social")}>
                     Red Social
                 </button>
 
@@ -36,6 +42,15 @@ export default function Proyectos() {
             <div className='w-[100%] h-[600px] lg:w-[75%] lg:h-[380px] lg:ml-2 border border slate-200 rounded-lg'>
                 <div className='flex flex-col lg:flex-row'>
                     {view === "countries" && (<Countries />)}
+                </div>
+                <div className='flex flex-col lg:flex-row'>
+                    {view === "rick" && (<RickAndMorty />)}
+                </div>
+                <div className='flex flex-col lg:flex-row'>
+                    {view === "uuid" && (<UuidStore />)}
+                </div>
+                <div className='flex flex-col lg:flex-row'>
+                    {view === "social" && (<Social />)}
                 </div>
             </div>
        </section>

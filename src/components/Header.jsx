@@ -18,7 +18,7 @@ export default function Header(){
                     <ul className='flex h-5/6 flex-col justify-around md:flex-row md:justify-end w-full '>
                         <li className='md:px-8 hover:text-sky-600'><a href="#sobreMi"> Quien Soy </a></li>
                         <li className='md:px-8 hover:text-sky-600'><a href="#proyectos"> Proyectos </a></li>
-                        <li className='md:px-8 hover:text-sky-600'><a href=""> Contactame </a></li>
+                        <li className='md:px-8 hover:text-sky-600'><a href="#contacto"> Contactame </a></li>
                     </ul>
                 </div>
                 <button id="menu-button" className="absolute top-5 right-12 md:hidden" onClick={toggleMenu}>

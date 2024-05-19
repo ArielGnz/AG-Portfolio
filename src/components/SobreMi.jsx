@@ -10,7 +10,7 @@ export default function SobreMi() {
                 <h1 className='text-sky-300 text-2xl font-bold tracking-widest leading-10 lg:text-4xl'> Acerca de Mi </h1>
                 <p className='py-2 text-3xl font-bold text-slate-300 lg:text-5xl mt-5'> Quien Soy </p>
                 <p className='mt-5 text-base text-slate-200'> ¡Hola! Mi nombre es Ariel Gonzalez, soy desarrollador FullStack radicado en Argentina.
-                Puedo colaborar en todas las áreas del desarrollo. Con una combinación de experiencia trabajando tanto de forma autónoma como dentro de equipos ágiles,
+                Soy capaz colaborar en todas las áreas del desarrollo. Con una combinación de experiencia trabajando tanto de forma autónoma como dentro de equipos ágiles,
                 he acumulado una amplia comprensión del proceso de desarrollo, perfeccionado mis habilidades a través de proyectos reales.
                 Me perfilo como un profesional proactivo, dedicado, resiliente, creativo y empático. Abordo cada proyecto con tenacidad y mentalidad de crecimiento y colaboración.
                 Creo en el poder de la colaboración y la importancia del aprendizaje continuo. Mi objetivo no es sólo contribuir con mi experiencia a proyectos interesantes,
@@ -34,7 +34,7 @@ export default function SobreMi() {
 
             <div className='my-10 w-full lg:content-center'>
                     <img className='w[300px] h-[320px] m-auto
-                    lg:w-[400px] lg:h-[70%] lg:bg-center lg:bg-no-repeat ' src={perfil}/>
+                    lg:w-[400px] lg:h-[70%] lg:bg-center lg:bg-no-repeat rounded-full lg:rounded-full' src={perfil}/>
             </div>
         </section>
     </div>
