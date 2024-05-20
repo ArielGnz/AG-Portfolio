@@ -3,7 +3,7 @@ import rick from'../../assets/rick.jpg'
 const RickAndMorty = () => {
     return (
         <>
-            <div className='m-5 w-[90%] lg:my-10 lg:w-[75%] lg:h-[100%] lg:content-center'>
+            <div className='m-5 w-[90%] h-[300px] lg:my-10 lg:w-[75%] lg:h-[100%] lg:content-center'>
                 <img src={rick} alt="" className='w-full h-full lg:w-full lg:h-[300px] rounded-lg' />
             </div>
             <div className='text-white lg:h-[300px] w-[80%] m-auto lg:w-[80%] '>

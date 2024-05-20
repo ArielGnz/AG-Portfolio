@@ -21,19 +21,19 @@ export default function Proyectos() {
         <section id='proyectos' className='my-2 flex flex-col w-[90%] m-auto lg:flex-row lg:w-[80%] lg:my-16 lg:h-screen lg:content-center'>
             <div className='flex lg:flex-col lg:w-[20%] text-white lg:text-xl mt-6 '> 
 
-                <button  className='border-b-2 mx-1 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg' 
+                <button  className='border-b-2 mx-1 hover:text-sky-200 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg' 
                         onClick={() => handleView("countries")}>
                     Countries
                 </button>
-                <button className='border-b-2 mx-1 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
+                <button className='border-b-2 mx-1 hover:text-sky-200 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
                         onClick={() => handleView("rick")}>
                     Rick and Morty
                 </button>
-                <button className='border-b-2 mx-1 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
+                <button className='border-b-2 mx-1 hover:text-sky-200 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
                         onClick={() => handleView("uuid")}>
                     uuid-store
                 </button>
-                <button className='border-b-2 mx-1 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
+                <button className='border-b-2 mx-1 hover:text-sky-200 hover:border-sky-500 lg:border-2 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
                         onClick={() => handleView("social")}>
                     Red Social
                 </button>
