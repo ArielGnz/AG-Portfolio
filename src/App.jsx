@@ -3,6 +3,7 @@ import SobreMi from "./components/SobreMi"
 import Titulo from "./components/Titulo"
 import Proyectos from "./components/Proyectos/Proyectos";
 import Contacto from './components/Contacto';
+import Footer from "./components/Footer";
 //import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <SobreMi/>
       <Proyectos/>
       <Contacto />
+      <Footer />
     </div>
   )
 }
