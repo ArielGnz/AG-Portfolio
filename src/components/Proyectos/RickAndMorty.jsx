@@ -8,7 +8,8 @@ const RickAndMorty = () => {
             </div>
             <div className='text-white lg:h-[300px] w-[80%] m-auto lg:w-[80%] '>
                 <h1 className='text-2xl text-sky-500 text-center font-bold tracking-widest pb-6'> Rick And Morty </h1>
-                <p className='text-white text-xl lg:w-[90%] lg:m-auto '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus, veniam molestias voluptate corporis quaerat iusto nisi rerum accusantium porro aperiam ut, reprehenderit iure error fugit dolorum eius culpa similique.</p>
+                <p className='text-white text-xl lg:w-[90%] lg:m-auto '>El proyecto de Rick and Morty es una página web donde se pueden visualizar todos los personajes en su home Page,
+                además se puede hacer una búsqueda por nombre de los personajes. También hay una sección de favoritos donde se guardan todos los personajes preferidos que se elijan.</p>
             </div>
         </>
     )

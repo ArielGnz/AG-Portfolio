@@ -1,5 +1,6 @@
 import React from 'react'
-import dev from '../assets/dev.jpg'
+import dev from '../assets/dev.jpg';
+import { Link } from "react-router-dom";
 
 
 export default function Titulo() {
@@ -9,9 +10,16 @@ export default function Titulo() {
         window.open(pdfUrl, '_blank');
     }
 
-    // <div className='mt-8 w-[350px]'>
-    //             <a className='border-2 rounded border-sky-500 p-4 w-[350px] text-white text-lg tracking-widest hover:bg-sky-900' href="ArielGonzalezCV.pdf"> Descargar CV </a>
-    //         </div>
+    const linkedin = () =>{
+        const url = "https://www.linkedin.com/in/arielgnz/";
+        window.open(url, '_blank');
+    }
+
+    const github = () => {
+        const url = "https://github.com/ArielGnz";
+        window.open(url, '_blank');
+    }
+
   return (
     <section id='inicio' className='flex flex-col mt-[120px] lg:flex-row lg:h-screen lg:w-[80%] lg:m-auto lg:content-center border-b border-slate-800 '>
         <div  className='p-10 lg:w-[90%] my-10 w-full lg:h-[700px] lg:self-center lg:content-center '>
@@ -22,8 +30,8 @@ export default function Titulo() {
                 web, enfocado en crear productos accesibles para el mercado de la tecnología
             </p>
             <div className='mt-6'>
-                <a href="" className='pr-2 text-4xl text-white hover:text-sky-600'><i className='bi bi-linkedin px-2'></i></a>
-                <a href="" className='pr-2 text-4xl text-white hover:text-sky-600'><i className='bi bi-github px-2'></i></a>
+                <button onClick={linkedin} className='pr-2 text-4xl text-white hover:text-sky-600'><i className='bi bi-linkedin px-2'></i></button>             
+                <button onClick={github} className='pr-2 text-4xl text-white hover:text-sky-600'><i className='bi bi-github px-2'></i></button>
             </div>
             <button className='mt-6 border-2 rounded border-sky-500 p-4 w-[200px] text-white text-lg tracking-widest hover:bg-sky-900'
                     onClick={handleDownload}>

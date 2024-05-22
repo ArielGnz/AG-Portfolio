@@ -24,6 +24,16 @@ const Contacto = () => {
         );
      };
 
+     const linkedin = () =>{
+        const url = "https://www.linkedin.com/in/arielgnz/";
+        window.open(url, '_blank');
+    }
+
+    const github = () => {
+        const url = "https://github.com/ArielGnz";
+        window.open(url, '_blank');
+    }
+
 
     return (
         <div className="flex flex-col lg:flex-row lg:h-[500px] lg:w-[75%] m-auto mt-[300px] mb-10">
@@ -32,8 +42,8 @@ const Contacto = () => {
                 <p className="mx-10 text-white text-xl">Actualmente estoy buscando nuevas oportunidades. </p>
                 <p className="mx-10 text-white text-xl">Quiero escuchar tu idea y averiguar cómo podemos trabajar juntos!</p>
                 <div className='mt-6 mx-8'>
-                    <a href="" className='pr-2 text-4xl text-white hover:text-sky-600'><i className='bi bi-linkedin px-2'></i></a>
-                    <a href="" className='pr-2 text-4xl text-white hover:text-sky-600'><i className='bi bi-github px-2'></i></a>
+                    <button onClick={linkedin} className='pr-2 text-4xl text-white hover:text-sky-600'><i className='bi bi-linkedin px-2'></i></button>             
+                    <button onClick={github} className='pr-2 text-4xl text-white hover:text-sky-600'><i className='bi bi-github px-2'></i></button>
                 </div>
             </div>
             <div className="mx-auto mt-4 mb-4 w-[90%] h-[450px] lg:w-[60%] lg:h[400px] lg:m-10">
