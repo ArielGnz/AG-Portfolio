@@ -38,7 +38,7 @@ const Contacto = () => {
     return (
         <div className="flex flex-col lg:flex-row lg:h-[500px] lg:w-[75%] m-auto mt-[300px] mb-10">
             <div id='contacto' className="mx-auto mt-4 w-[90%] h-[450px] lg:w-[40%] lg:h[400px] lg:m-10 ">
-                <h1 className="text-6xl text-sky-500 font-bold m-10">Contactame!</h1>
+                <h1 className="text-6xl text-sky-500 font-bold m-2">Contactame!</h1>
                 <p className="mx-10 text-white text-xl">Actualmente estoy buscando nuevas oportunidades. </p>
                 <p className="mx-10 text-white text-xl">Quiero escuchar tu idea y averiguar cómo podemos trabajar juntos!</p>
                 <div className='mt-6 mx-8'>

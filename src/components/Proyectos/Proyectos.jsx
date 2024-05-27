@@ -18,7 +18,7 @@ export default function Proyectos() {
   return (
     <div id='proyectos' className='lg:h-[600px]'>
         <h2 className='text-3xl text-white font-bold tracking-widest w-[85%] m-auto text-center pt-[160px] '> Mis Proyectos</h2>
-        <section id='proyectos' className='my-2 flex flex-col w-[90%] m-auto lg:flex-row lg:w-[80%] lg:my-16 lg:h-screen lg:content-center'>
+        <section id='proyectos' className='my-2 flex flex-col w-full m-auto lg:flex-row lg:w-[80%] lg:my-16 lg:h-screen lg:content-center'>
             <div className='flex lg:flex-col lg:w-[20%] text-white lg:text-xl mt-12 '> 
 
                 <button className='border-b-2 mx-1 hover:text-sky-200 hover:border-sky-500 lg:border-2 border-slate-700 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg' 
@@ -39,7 +39,7 @@ export default function Proyectos() {
                 </button>
 
             </div>
-            <div className='w-[100%] h-[600px] lg:w-[75%] lg:h-[450px] lg:ml-2 border-2 border-slate-800 rounded-lg'>
+            <div className='w-[100%] h-[600px] lg:w-[75%] lg:h-[450px] lg:ml-2'>
                 <div className='flex flex-col lg:flex-row'>
                     {view === "countries" && (<Countries />)}
                 </div>
