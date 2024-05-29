@@ -35,7 +35,7 @@ export default function Titulo() {
             </div>
             <button className='mt-6 border-2 rounded border-sky-500 p-4 w-[200px] text-white text-lg tracking-widest hover:bg-sky-900'
                     onClick={handleDownload}>
-                Descargar
+                Descargar CV
             </button>
             
            
