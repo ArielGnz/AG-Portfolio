@@ -38,7 +38,6 @@ export default function Titulo() {
                 Descargar CV
             </button>
             
-           
         </div>
         <div className='my-10 w-full lg:content-center'>
                 <img className='w[300px] h-[320px] m-auto
