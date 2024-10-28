@@ -9,6 +9,7 @@ const UuidStore = () => {
             <div className='text-white lg:h-[300px] w-[80%] m-auto lg:w-[80%] '>
                 <h1 className='text-2xl text-sky-500 text-center font-bold tracking-widest pb-6'> Uuid-store </h1>
                 <p className='text-white text-xl lg:w-[90%] lg:m-auto '>Proyecto final del bootcamp junto con otros 6 compañeros donde realizamos una e-commerce de zapatillas.</p>
+                <span>https://github.com/Agus-Albarracin/uuid-store</span>
             </div>
         </>
     )

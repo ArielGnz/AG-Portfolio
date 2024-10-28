@@ -25,18 +25,22 @@ export default function Proyectos() {
                         onClick={() => handleView("countries")}>
                     Countries
                 </button>
-                <button className='border-b-2 mx-1 hover:text-sky-200 hover:border-sky-500 lg:border-2 border-slate-700 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
-                        onClick={() => handleView("rick")}>
-                    Rick and Morty
-                </button>
-                <button className='border-b-2 mx-1 hover:text-sky-200 hover:border-sky-500 lg:border-2 border-slate-700 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
-                        onClick={() => handleView("uuid")}>
-                    uuid-store
-                </button>
+                
                 <button className='border-b-2 mx-1 hover:text-sky-200 hover:border-sky-500 lg:border-2 border-slate-700 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
                         onClick={() => handleView("social")}>
                     Red Social
                 </button>
+                
+                <button className='border-b-2 mx-1 hover:text-sky-200 hover:border-sky-500 lg:border-2 border-slate-700 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
+                        onClick={() => handleView("uuid")}>
+                    uuid-store
+                </button>
+
+                <button className='border-b-2 mx-1 hover:text-sky-200 hover:border-sky-500 lg:border-2 border-slate-700 bg-slate-700 w-[90%] px-4 py-5 mb-4 lg:rounded-lg'
+                        onClick={() => handleView("rick")}>
+                    Rick and Morty
+                </button>
+                
 
             </div>
             <div className='w-[100%] h-[600px] lg:w-[75%] lg:h-[450px] lg:ml-2'>
