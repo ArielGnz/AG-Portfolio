@@ -10,6 +10,7 @@ export default function Header(){
     };
 
     return(
+        
         <div className='w-full m-auto mt-0 border-b-4 border-slate-800 lg:fixed bg-slate-900'>
             <nav className="flex justify-between py-6 m-auto px-10 text-lg font-medium tracking-widest md:items-center lg:w-[85%]">
                 <div><h1 className='font-serif italic text-3xl text-white bg-slate-700 rounded-full border-4 border-sky-500 p-2 ml-4 hover:text-sky-400'>AG</h1></div>
