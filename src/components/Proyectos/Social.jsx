@@ -17,9 +17,7 @@ const social = () => {
                 <p className='text-white text-xl lg:w-[90%] lg:m-auto '> El proyecto de Red Social es una página web con funcionalidades similares a Facebook, utilizando
                     tecnologías como React, Node.js, y MongoDB. La plataforma permite a los usuarios crear perfiles, publicar contenido,
                     agregar amigos y seguirlos.
-                
-
-                <button className='pt-2'><span onClick={github} className='hover:text-sky-600 text-white text-xl lg:w-[90%] lg:m-auto '>https://github.com/ArielGnz/red-social</span></button>
+                    <button className='pt-2'><span onClick={github} className='hover:text-sky-600 text-white text-xl lg:w-[90%] lg:m-auto '>https://github.com/ArielGnz/red-social</span></button>
                 </p>
             </div>
         </>
